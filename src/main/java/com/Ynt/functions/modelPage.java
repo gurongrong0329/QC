@@ -8,13 +8,13 @@ import org.openqa.selenium.Keys;
 
 
 public class modelPage {
-    protected WebDriver driver=null;
-    private ParseProperties data=null;
+    protected WebDriver driver;
+    private ParseProperties data;
     
     public modelPage(WebDriver driver)
     {
         this.driver=driver;
-        data=new ParseProperties(System.getProperty("user.dir")+"\\config\\data\\parameter.properties");
+        data=new ParseProperties(System.getProperty("user.dir")+"/config/data/parameter.properties");
     }
     
     public WebElement elementLocator(By element)
