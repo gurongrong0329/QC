@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class login {
-    private ParseProperties data=new ParseProperties(System.getProperty("user.dir") + "\\config\\data\\parameter.properties");
+    private ParseProperties data=new ParseProperties(System.getProperty("user.dir") + "/config/data/parameter.properties");
     private Browsers browsers=null;
     private WebDriver driver=null;
     private Assert judge=null;
