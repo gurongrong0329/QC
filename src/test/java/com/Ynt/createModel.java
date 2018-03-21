@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class createModel {
-    private ParseProperties data=new ParseProperties(System.getProperty("user.dir")+"\\config\\data\\parameter.properties");
+    private ParseProperties data=new ParseProperties(System.getProperty("user.dir")+"/config/data/parameter.properties");
     private WebDriver driver=null;
     private Browsers browsers=null;
     private modelPage mp=null;
