@@ -11,7 +11,7 @@ public class Browsers {
     public WebDriver driver = null;
     private FirefoxProfile firefoxprofile = null;
     private static DesiredCapabilities caps = null;
-    private ParseProperties data = new ParseProperties(System.getProperty("user.dir") + "\\config\\data\\parameter.properties");
+    private ParseProperties data = new ParseProperties(System.getProperty("user.dir") + "/config/data/parameter.properties");
 
     public Browsers(BrowsersType browserstype) {
         switch (browserstype) {
@@ -31,7 +31,7 @@ public class Browsers {
                 driver.manage().window().maximize();
                 break;
             case chrome:
-                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedriver.exe");
                 //caps = DesiredCapabilities.chrome();
                 //caps.setCapability("chrome.switches",Arrays.asList("--start-maximized"));  //���browser
                 //capabilities.setCapability("chrome.switches", Arrays.asList("--proxy-server=http://your-proxy-domain:4443")); //���ô���
