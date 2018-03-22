@@ -34,11 +34,11 @@ public class Browsers {
                 String os = System.getProperty("os.name");
                 if (os.toLowerCase().startsWith("win")) {
                     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedriver.exe");
-                    System.out.println(os);
+                    System.out.println("Windows:"+os);
                 }
                 else {
                     System.setProperty("webdriver.chrome.driver","chromedriver");
-                    System.out.println(os);
+                    System.out.println("Linux:"+os);
                 }
                 //caps = DesiredCapabilities.chrome();
                 //caps.setCapability("chrome.switches",Arrays.asList("--start-maximized"));  //���browser
