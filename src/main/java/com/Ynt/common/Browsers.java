@@ -37,7 +37,7 @@ public class Browsers {
                     System.out.println("Windows:"+os);
                 }
                 else {
-                    System.setProperty("webdriver.chrome.driver","chromedriver");
+                    System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/driver/chromedriver");
                     System.out.println("Linux:"+os);
                 }
                 //caps = DesiredCapabilities.chrome();
